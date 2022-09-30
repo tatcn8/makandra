@@ -1,0 +1,6 @@
+%h2 Here are all the cards:
+-@cards.each do |card|
+  = link_to card.title, card_path(card)
+
+%h4 Want to make a new card?
+= link_to "New Card", new_card_path

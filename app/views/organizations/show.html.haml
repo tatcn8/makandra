@@ -1,0 +1,5 @@
+%h3= "Welcome to the #{@organization.name} page"
+%div= "#{@organization.name} has #{@organization.decks.count} decks."
+
+-@organization.decks.each do |deck|
+  = link_to deck.title, deck_path(deck)

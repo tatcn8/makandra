@@ -1,0 +1,8 @@
+%h1= @deck.title
+%h3= "This deck has #{@deck.cards.count} cards:"
+
+-@deck.cards.each do |card|
+  =link_to card.title, card_path(card)
+
+%div
+  = link_to " <-----back to all decks", decks_path

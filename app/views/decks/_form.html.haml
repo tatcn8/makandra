@@ -1,0 +1,6 @@
+= form_with model: @deck do |f|
+  = f.label :title 
+  = f.text_field :title 
+  = f.label :organization_id
+  = f.collection_select(:organization_id, Organization.all, :id, prompt: "true")
+  - f.submit

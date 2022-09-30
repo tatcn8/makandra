@@ -1,0 +1,6 @@
+%h2 Here are all the decks: 
+-@decks.each do |deck|
+  = link_to deck.title, deck_path(deck)
+
+%h4 Want to make a new deck?
+= link_to "New Deck", new_deck_path
