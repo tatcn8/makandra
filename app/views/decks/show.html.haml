@@ -4,8 +4,5 @@
 -@deck.cards.each do |card|
   =link_to card.title, card_path(card)
 
-%div
-  = link_to " <-----back to all decks", decks_path
-
-
-= link_to "Home", root_path
+.py-4
+  = link_to " <--back to all decks", decks_path

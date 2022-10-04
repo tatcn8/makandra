@@ -4,7 +4,7 @@ class DecksController < ApplicationController
   end
 
   def show
-    @deck = Deck.find_by(params[:id])
+    @deck = Deck.find(params[:id])
   end
 
   def new
