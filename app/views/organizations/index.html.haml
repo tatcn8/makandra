@@ -1,0 +1,6 @@
+%h1 org daddies
+- @orgs.each do |org|
+  %div= link_to "#{org.name}", organization_path(org)
+
+
+= link_to "Home", root_path
