@@ -33,7 +33,7 @@ class CardsController < ApplicationController
   private
 
   def card_params
-    params_require(:card).permit(:title, :deck_id)
+    params.require(:card).permit(:title, :body, :deck_id)
   end
 
 end

@@ -2,5 +2,5 @@
   = f.label :title 
   = f.text_field :title 
   = f.label :organization_id
-  = f.collection_select(:organization_id, Organization.all, :id, prompt: "true")
-  - f.submit
+  = f.collection_select(:organization_id, Organization.all, :id, :name, include_blank: "Select Organization") 
+  = f.submit "submit", class: "btn"

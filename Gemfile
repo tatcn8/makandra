@@ -51,7 +51,10 @@ gem "haml-rails", "~> 2.0"
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap', '~> 5.2.1'
 gem 'trestle'
+gem "view_component"
+gem 'dry-initializer-rails'
 gem 'devise'
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

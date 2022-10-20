@@ -100,6 +100,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dry-initializer (3.1.1)
+    dry-initializer-rails (3.1.1)
+      dry-initializer (>= 2.4, < 4)
+      rails (> 3.0)
     erubi (1.11.0)
     erubis (2.7.0)
     execjs (2.8.1)
@@ -250,6 +254,10 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    view_component (2.74.1)
+      activesupport (>= 5.0.0, < 8.0)
+      concurrent-ruby (~> 1.0)
+      method_source (~> 1.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.0)
@@ -278,6 +286,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  dry-initializer-rails
   haml-rails (~> 2.0)
   importmap-rails
   jbuilder
@@ -290,6 +299,7 @@ DEPENDENCIES
   trestle
   turbo-rails
   tzinfo-data
+  view_component
   web-console
   webdrivers
 

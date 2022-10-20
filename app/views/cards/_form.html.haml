@@ -1,0 +1,8 @@
+= form_with model: @card do |f|
+  = f.label :title 
+  = f.text_field :title 
+  = f.label :body 
+  = f.text_field :body 
+  = f.label :deck_id
+  = f.collection_select(:deck_id, Deck.all, :id, :title, include_blank: "Select Deck") 
+  = f.submit "submit", class: "btn"
